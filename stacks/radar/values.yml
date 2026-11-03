@@ -1,0 +1,11 @@
+# skyhook/radar - https://skyhook-io.github.io/helm-charts
+#
+# The chart defaults are the install:
+# - ClusterIP service on port 9280, no Ingress or load balancer
+# - no authentication, so Radar is reached with kubectl port-forward
+# - read-only ClusterRole plus pod logs; pod exec, port forwarding,
+#   Secrets and Helm write access stay off
+# - event timeline kept in memory, so no volume is created
+#
+# Full values reference:
+# https://github.com/skyhook-io/radar/blob/main/deploy/helm/radar/values.yaml
